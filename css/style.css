@@ -645,8 +645,10 @@ form {
 }
 
 .field textarea {
+    field-sizing: content;
     resize: vertical;
     min-height: 7.5rem;
+    contain: inline-size;
 }
 
 .row-2 {
