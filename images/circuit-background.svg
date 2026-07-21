@@ -1,0 +1,72 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%" stop-color="#0a0a0a" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#0a0a0a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.92"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#E8791A" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#E8791A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#0a0a0a"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g stroke="#E8791A" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Leiterbahn-Cluster oben rechts -->
+    <path d="M1000 40 H1180 L1220 80 V220 L1260 260 H1440"/>
+    <path d="M1100 40 V140 L1140 180 H1300 L1340 220 V340"/>
+    <path d="M1260 40 V100 H1420 L1460 140 V300"/>
+    <path d="M1440 260 H1560"/>
+    <path d="M1340 340 H1520 L1560 380"/>
+
+    <!-- Leiterbahn-Cluster Mitte rechts -->
+    <path d="M980 420 H1120 L1160 460 V560 L1200 600 H1400"/>
+    <path d="M1080 420 V500 L1120 540 H1260 L1300 580 V680"/>
+    <path d="M1400 600 H1560"/>
+    <path d="M1300 680 H1480 L1520 720"/>
+
+    <!-- Leiterbahn-Cluster unten -->
+    <path d="M900 780 H1060 L1100 820 V920"/>
+    <path d="M1020 780 V860 L1060 900 H1220 L1260 940 V1000"/>
+    <path d="M1220 900 H1400 L1440 940"/>
+    <path d="M1440 940 V1000"/>
+
+    <!-- vereinzelte lange Linien für Tiefe -->
+    <path d="M700 0 V180 L740 220 H860"/>
+    <path d="M600 1000 V860 L640 820 H780"/>
+  </g>
+
+  <!-- Knotenpunkte -->
+  <g fill="#E8791A" opacity="0.65">
+    <circle cx="1180" cy="40" r="5"/>
+    <circle cx="1220" cy="220" r="5"/>
+    <circle cx="1340" cy="220" r="5"/>
+    <circle cx="1420" cy="100" r="5"/>
+    <circle cx="1460" cy="300" r="5"/>
+    <circle cx="1160" cy="460" r="5"/>
+    <circle cx="1260" cy="560" r="5"/>
+    <circle cx="1300" cy="580" r="5"/>
+    <circle cx="1100" cy="820" r="5"/>
+    <circle cx="1260" cy="940" r="5"/>
+    <circle cx="740" cy="220" r="5"/>
+    <circle cx="640" cy="820" r="5"/>
+  </g>
+
+  <!-- Bauteil-Symbole (stilisierte Sicherungen) -->
+  <g stroke="#E8791A" stroke-width="2" fill="none" opacity="0.55">
+    <rect x="1140" y="150" width="14" height="34" rx="2"/>
+    <rect x="1240" y="500" width="14" height="34" rx="2"/>
+    <rect x="1000" y="850" width="14" height="34" rx="2"/>
+  </g>
+
+  <!-- Puls-/Herzschlaglinie als Signature, groß und dezent -->
+  <path d="M-100 620 H480 L560 500 L660 760 L740 560 L820 620 H1900"
+        stroke="#E8791A" stroke-width="3" fill="none" opacity="0.28"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Verdunklung / Fade für bessere Textlesbarkeit auf der linken Seite -->
+  <rect width="1600" height="1000" fill="url(#fade)"/>
+</svg>
